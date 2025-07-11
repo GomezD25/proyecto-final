@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Medialunas Online</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <a href="#" id="abrir-carrito">🛒 Carrito (<span id="cantidad-carrito">0</span>)</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+  <h2>Quiénes Somos</h2>
+  <p>
+    En <strong>Medialunas Online</strong> llevamos el sabor casero directamente a tu puerta.
+    Somos una panadería artesanal nacida en familia, con el sueño de compartir nuestras medialunas
+    recién horneadas, hechas con ingredientes de calidad y mucho amor. 🥐
+  </p>
+  <p>
+    Desde 2020, nos especializamos en medialunas tradicionales, de manteca y rellenas, entregando
+    frescura, sabor y felicidad en cada bocado.
+  </p>
+</section>
+    <section id="productos">
+  <h2>Nuestras Medialunas</h2>
+  <div class="productos-grid">
+    <div class="card">
+      <img src="/imagen/medialunaConDulce.webp" alt="Medialuna de dulce de leche" />
+      <h3>Medialuna de Dulce de Leche</h3>
+      <p class="precio">$1250</p>
+      <p>Rellena con el clásico dulce de leche argentino. Suave, dulce y artesanal.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="card">
+      <img src="/imagen/medialunaconchocolate.webp" alt="Medialuna de chocolate" />
+      <h3>Medialuna de Chocolate</h3>
+      <p class="precio">$1400</p>
+      <p>Cubierta de chocolate intenso, perfecta para los amantes del cacao.</p>
+      <button>Agregar al carrito</button>
+    </div>
+  </div>
+</section>
+    <!--Contacto-->
+    <section id="contacto">
+    <h2>Contacto</h2>
+    <form id="form-contacto">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Medialunas Online. Todos los derechos reservados.</p>
+  </footer>
+
+<div id="carrito-panel" class="oculto">
+  <h3>Tu Carrito</h3>
+  <ul id="lista-carrito"></ul>
+  <p><strong>Total:</strong> $<span id="total-carrito">0</span></p>
+  <button id="vaciar-carrito">Vaciar carrito</button>
+  <button id="finalizar-compra">Finalizar compra</button>
+  <button id="cerrar-carrito">Cerrar</button>
+  <p id="mensaje-compra" style="display:none; color: green; font-weight: bold; margin-top: 10px;">
+    ¡Gracias por tu compra! 🥐💛
+  </p>
+</div>
+
+
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
